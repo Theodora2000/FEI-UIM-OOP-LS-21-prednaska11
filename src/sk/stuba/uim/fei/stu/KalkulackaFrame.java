@@ -154,7 +154,7 @@ public class KalkulackaFrame extends JFrame implements ActionListener, KeyListen
         if(bla.equals("+") || bla.equals("*") || bla.equals("-") || bla.equals("=")){
 
             if(operacia.equals("+")){
-                vysledok = vysledok + cislo;
+                 vysledok = vysledok + cislo;
             }
             if(operacia.equals("-")){
                 vysledok = vysledok - cislo;
@@ -162,6 +162,10 @@ public class KalkulackaFrame extends JFrame implements ActionListener, KeyListen
             if(operacia.equals("*")){
                 vysledok = vysledok * cislo;
             }
+            if(operacia.equals("=")){
+                vysledok = cislo;
+            }
+
             zobrazene = Integer.toString(vysledok);
             ukazany_vysledok = true;
             operacia = bla;
